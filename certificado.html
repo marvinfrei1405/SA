@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="gerar_dados()">
+
+    <div id="certificado">
+        <table style="border: 2px solid #000 ;">
+            <tr>
+                <td>
+                    <p> Caro senhor(a) <span id="tnome">nome</span> portador(a) do cpf <span id="tcpf">cpf</span>,</p>
+                    <p> Nós da IANES TECH damos a você este certificado pela conclusão do nosso curso </p>
+                    <p> CURSO DE EDIÇÃO DE VIDEO BÁSICA - KINEMASTER.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p> Clique no botão para imprimir seu certificado: </p>
+    <p>
+        <input type="button" value="IMPRIMIR" onclick="certificado_pdf()"/>
+    </p>
+    <p> AVALIE NOSSO CURSO: </p>
+    <p>
+        <a href="feedback.html"><input type="button" value="FeedBack"/></a>
+    </p>
+</body>
+  
+<script>
+function gerar_dados(){
+    let nome = document.getElementById("tnome");
+    let cpf = document.getElementById("tcpf");
+
+    var dados = localStorage.getItem(2);
+    var usuario = JSON.parse(dados);
+
+    nome.innerHTML = usuario.nome_;
+    cpf.innerHTML = usuario.cpf_;
+
+}
+
+function certificado_pdf() {
+
+var dados = document.getElementById('certificado').innerHTML;
+
+
+var janela = window.open('','','width=800, height=600');
+janela.document.write('<html> <head>');
+janela.document.write('<title>PDF</title> </head>');
+janela.document.write('<body>');
+janela.document.write(dados);
+janela.document.write('</body> </html>');
+janela.document.close();
+janela.print();
+
+}
+</script>
+</html>

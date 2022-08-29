@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+
+header{
+    border: 0px solid #000;
+    height: 50px;
+    background-color: rgb(225, 244, 255);   
+}
+
+body {
+    border: 0px solid rgb(255, 255, 255);
+    margin: auto;
+    height: 700px;
+    background: linear-gradient(#3161A3,#13ABC4,#3161A3);
+}
+
+
+article {
+    background-color: rgb(29, 77, 150);
+    border: 0.5px solid rgb(255, 255, 255);
+    margin: 0 auto;
+    height: 450px;
+    margin-top: 20px;
+    border-radius: 30px;
+    
+}
+
+#titulo {
+    text-align: center;
+    font-size: 40pt;
+    margin: auto;
+    margin-top: 45px;
+    font-weight: bolder;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#logo {
+    margin-top: 20px;
+    margin-left: 350px;
+    
+}
+section > img {
+    width: 45%;
+    height: 20%;
+}
+section {
+    margin: 0 auto;
+    border: 0px solid #000;
+    font-size: 30pt;
+    margin-top: 20px;
+    margin: auto;
+}
+
+.caixa {
+    margin-top: 80px;
+}
+
+#mail{
+    height: 50px;
+    width: 210px;
+    border: none;
+    padding: 0.1% 5%;
+    text-align: center;
+    background-color: #EBEBEB;
+    border-radius: 40px;
+    margin: auto;
+}
+
+#senha{
+    height: 50px;
+    width: 210px;
+    padding: 0.1% 5%;
+    background-color: #EBEBEB;
+    border-radius: 40px;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+#sectionl{
+    float: left;
+    margin-left: 60px;
+}
+#sections {
+    float: left;
+    margin-left: 60px;
+}
+#sectionv {
+    margin-left: 50px;
+    float: left;
+} 
+
+#envia{
+    margin: auto;
+    margin-top: 50px;
+    margin-right: 20px;
+    height: 50px;
+    width: 245px;
+    padding: 1% 5%;
+    border-radius: 40px;
+   
+    font-size: 13pt;
+    font-weight: bolder;
+    color: rgb(0, 99, 99);
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  nav ul {
+    margin: 0
+}
+
+nav ul li {
+    margin: 0
+}
+
+nav ul li a {
+    font-size: 6pt;
+}
+
+aside {
+    height: 100px;
+}
+
+article{
+    float: none;
+    display: block;
+    clear: both;
+}
+
+section {
+    float: none;
+}
+
+footer {
+    display: block;
+    clear: both;
+}
+
+}
+
+@media only screen and (min-width: 1100px) {
+     #logo { margin-left: 470px; } 
+    #sectionl { margin-left: 85px;}
+    #sectionv {margin-left: 80px;}
+    #sections {margin-left: 85px;}
+} 

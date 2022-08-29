@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> WEB EAD </title>
+    <meta charset='utf-8'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='cadastro.css'>
+    
+    
+    <style>
+        span{
+            color: #F00;
+            font-weight:bolder;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="col-12">
+        <section id="logo"> <a href="index.html"> <img src="img/logo transparente.png" > </a></section>
+    </header>
+
+    <main class="col-12">
+        <article class="col-5">
+                <section id="titulo" class="col-6"><a> Cadastrar <a></section>
+                <section class="col-12"><legend id="label1"> Faça o Seu Cadastro: </legend></section>
+                <section class="col-12">
+                <label id="label1"> Nome: </label>
+                <input class="col-8" type="text" id="nome" name="nome" placeholder="Digite o seu nome:" maxlength="90" required  />
+                </section>
+                <section class="col-12">
+                <label id="label1"> Telefone: </label>
+                <input class="col-8" type="tel" id="telefone" name="telefone" placeholder="Digite o seu telefone:" maxlength="30" required />
+                </section>
+                <section class="col-12">
+            <label id="label1"> E-mail: </label>
+                <input class="col-8" type="email" id="mail" name="mail" placeholder="Digite o seu E-mail:" maxlength="80" required />
+                </section>
+                <section class="col-12">
+                    <label id="label1"> Senha: </label>
+                    <input class="col-8" type="password" id="senha" name="senha" placeholder="Digite uma senha:" required />
+                </section>
+                <section class="col-12">
+                    <label id="label1"> Confirmar senha: </label>
+                    <input class="col-8" type="password" id="conf_senha" name="conf_senha" placeholder="Digite novamente a senha:" required/>
+                </section>
+                <section class="col-12">
+            <label id="label1"> Cpf: </label> 
+                <input class="col-8" type="text" id="cpf" name="cpf" placeholder="Digite o seu Cpf:" required />
+                </section>
+                <section class="col-12">
+            <label id="label1"> Endereço </label>
+                <input class="col-8" type="text" id="endereco" name="endereco" placeholder="Digite o Seu Endereço:" required />
+                </section>
+                <section class="col-2" id="enviar">
+                    <input type="button" id="enviar" name="enviar" value="Continuar" onclick="return validar(), add(), redirecionar()" />
+                </section>
+            </article>
+    </main>
+
+    <footer class="col-12">
+        
+    </footer>
+
+</body>
+
+    <script src="cadastro.js"> </script>
+
+</html>
